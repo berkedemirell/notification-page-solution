@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.red-dot {
+    width: 7px;
+    height: 7px;
+    background-color: rgb(155, 17, 17);
+    border-radius: 100%;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+.unread {
+    background-color: rgb(184, 223, 223);
+    border-radius: 0.5rem;
+}
+.container {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;;
+    width: 600px;
+    height: auto;
+    margin-top: 2rem;
+    box-shadow: 0.1px 0.1px 15px 0.5px black;
+    padding: 2rem;
+}
+.notify {
+    font-size: 1.3rem;
+}
+.number {
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 0.2rem;
+    color: white;
+    background-color: rgb(6, 6, 104);
+}
+.mark-all {
+    border: none;
+    background-color: rgb(116, 73, 73);
+    cursor: pointer;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    color: white;
+    
+}
+.mark-all:hover {
+    background-color: rgb(77, 41, 41);
+}
+.inner-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.notifi-div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+    position: relative;
+}
+.notifi-div:hover {
+    background-color: rgb(184, 223, 223);
+    border-radius: 0.5rem;
+}
+.notification-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.image-div img {
+    width: 4rem;
+    height: 4rem;
+}
+.user-name {
+    font-weight: 700;
+}
+.user-name a {
+    text-decoration: none;
+    color: black;
+}
+.user-name a:hover {
+    color: rgb(12, 12, 165);
+}
+.time {
+    opacity: 0.7;
+}
+.message {
+    
+    margin-top: 0.4rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: rgb(232, 240, 237);
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+.like-image {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.attribution {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem ;
+}
+
+@media (max-width: 740px) {
+    .outer-container {
+        width: 400px;
+    }
+    .like-image{
+        bottom: 10px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .outer-container {
+        width: 400px;
+    }
+    * {
+        font-size: 0.9;
+    }
+}
+
+@media (max-width : 400px) {
+    .outer-container {
+        width: 300px;
+    }
+    .like-image {
+        bottom: 5px;
+    }
+    * {
+        font-size: 0.8rem;
+    }
+} 
+
+@media (max-width: 300px) {
+    .outer-container{
+        width: 200px;
+    }
+     * {
+        font-size: 0.7rem;
+     }
+
+     .image-div img {
+        width: 2rem;
+        height: 2rem;
+     }
+
+     .like-image {
+        width: 2rem;
+        height: 2rem;
+     }
+
+     .mark-all {
+        padding: 0.2rem;
+     }
+
+     .notify {
+        font-size: 1rem;
+     }
+
+     .red-dot {
+        right: 5px;
+        top: 5px;
+        width: 0.4rem;
+        height: 0.4rem;
+     }
+}
